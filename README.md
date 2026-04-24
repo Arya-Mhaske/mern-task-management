@@ -24,14 +24,14 @@ Minimal Task Management app with:
    ```bash
    npm install
    ```
-3. Create `.env` from `.env.example` and set values:
+3. Create `.env` from and set credentials:
    ```env
    PORT=5000
-   MONGODB_URI=mongodb://127.0.0.1:27017/task_manager_db
+   MONGODB_URI=<mongodb-srv-string> can be found in your mongoDB Atlas account
    ```
 4. Run backend:
    ```bash
-   npm run dev
+   node index.js
    ```
 
 Backend runs at `http://localhost:5000`.
@@ -45,14 +45,15 @@ Backend runs at `http://localhost:5000`.
 2. Install dependencies:
    ```bash
    npm install
+   npm run build
    ```
-3. Create `.env` from `.env.example`:
+3. Create `.env`:
    ```env
    VITE_API_URL=http://localhost:5000/api
    ```
 4. Run frontend:
    ```bash
-   npm run dev
+   node index.js
    ```
 
 Frontend runs at `http://localhost:5173`.
